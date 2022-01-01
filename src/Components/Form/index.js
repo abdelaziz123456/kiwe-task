@@ -80,12 +80,9 @@ const properties=useSelector(state=>state)
 
             </div>
 
+            
+
        
-
-            <div className="   col-12 col-md-6 my-2  ">
-                <InputField label={'Locality'} type='text' id='locality' ref={localityRef}  />
-
-            </div>
 
             <div className="  col-12 col-md-6 my-2  ">
                 <InputField label={'Price'} type='number' id='price' ref={priceRef}  />
@@ -109,9 +106,18 @@ const properties=useSelector(state=>state)
             </div>
 
 
+            <div className="col-12  my-2">
+            <select class="form-select" required ref={localityRef}>
+                
+                <option value="sola">Sola</option>
+                <option value="Sarkhej">Sarkhej</option>
+                <option value="Gota">Gota</option>
+            </select>
+            </div>
+
 
             <div className="  col-12  my-2  ">
-                <InputField label={'Add Images (max 5)'} type='file' id='images' multiple={'multiple'}  />
+                <InputField label={'Add Images (max 5)'} type='file' id='images' multiple={'multiple'}   />
 
             </div>
        
