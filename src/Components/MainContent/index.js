@@ -10,9 +10,25 @@ export default function MainContent(props) {
         <div className='main-content row m-0'>
             
 
+
+
+
+
+
             <div className="filters col-12 col-md-3 ">
-                    filters
+                   
             </div>
+
+
+
+
+
+
+
+
+
+
+
 
             <div className="properties col-12 col-md-9 row ">
                    {apartments.map(apart=>(
